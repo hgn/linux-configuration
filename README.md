@@ -24,9 +24,16 @@ A specification and example implementation
 
 Signals are used as a lightweight communucation channel betwenn application. Advantage is the easy to use mechanics of signals without heavy IPC mechnanism. But note: other IPC transport mechanism are also legit, like IPC, but if using dbus-deamon the number of context switches will be increased (because the dbus-deamon is always in between) as well as the application integration (dbus implemenation within service vs. signal callback handler within service)
 
-## To Services
+## To Serviced from *
 
-## To Configd
+- SIGHUP: config has changed, please reload configuration
+
+## To Configd from Services
+
+- SIGUSR1: okay, no failure or error in config
+- SIGUSR2: failure - error config
+- SIGHUP: (re)load all services, probably due to new parameters (written by service during configuration phase)
+
 
 # Example:
 
