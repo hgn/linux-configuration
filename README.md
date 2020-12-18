@@ -5,9 +5,11 @@ A specification and example implementation
 # Goals
 
 - Keep it simple (files are great)
+- Easy to deploy (do not depend on non-basic or complex set of functionality)
 - Keep it fast (IPC and context switch are not that cheap)
 - Provide rollback mechanism and clean communication channel in case of configuration erros
 - Programming language independend
+- Easy to develop (configuration files are text files, easy modifyable during development)
 
 
 
