@@ -2,7 +2,7 @@
 
 A specification and example implementation
 
-# Goals
+# Goals & Characteristics
 
 - Keep it simple (files are great)
 - Easy to deploy (do not depend on non-basic or complex set of functionality)
